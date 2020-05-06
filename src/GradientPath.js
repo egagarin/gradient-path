@@ -16,7 +16,7 @@ export default class GradientPath {
     this.renders = [];
 
     // Append a group to the SVG to capture everything we render and ensure our paths and circles are properly encapsulated
-    this.svg = path.closest('svg');
+    this.svg = path.closest('svg,g');
     this.group = svgElem('g', {
       class: 'gradient-path'
     });
